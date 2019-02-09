@@ -97,7 +97,7 @@ public class SampleFragment extends Fragment {
         if (requestCode == FILE_PICKER_REQUEST_CODE && resultCode == Activity.RESULT_OK) {
             String path = data.getStringExtra(FilePickerActivity.RESULT_FILE_PATH);
 
-            if (path != null) {
+            if (path != null){
                 Log.d("Path (fragment): ", path);
                 Toast.makeText(getContext(), "Picked file in fragment: " + path, Toast.LENGTH_LONG).show();
             }
