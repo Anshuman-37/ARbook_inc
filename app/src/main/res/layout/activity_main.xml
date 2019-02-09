@@ -25,9 +25,14 @@
         android:layout_marginEnd="131dp"
         android:layout_marginTop="189dp"
         android:text="Pick an Image"
-        android:onClick="btn_gallery"
-        android:id="@+id/BTn"
+        android:id="@id/BTn"
         android:textSize="10dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Image"
+        />
 
 
 </RelativeLayout>

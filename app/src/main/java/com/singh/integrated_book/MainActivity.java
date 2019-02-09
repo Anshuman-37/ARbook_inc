@@ -15,22 +15,28 @@ import com.google.android.filament.View;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 public class MainActivity extends AppCompatActivity {
-
+private boolean yes=false;
         ImageView img;
+        ImageView img2;
+        Button b;
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
-            img = (ImageView)findViewById(R.id.Imagetest);
+            img = (ImageView)findViewById(R.id.Image);
+            img2=(ImageView) findViewById(R.id.Imagetest);
 
-           // setContentView(R.layout.activity_ux);
-        }
+            b=findViewById(R.id.BTn);
 
-        public void btn_gallery(View view) {
-
+        b.setOnClickListener(view -> {
             Intent intent =new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI);
-
             startActivityForResult(intent,100);
+            img2=img;
+            yes=true;
+        });
+            if(yes==true) {
+                Intent intent = new Intent(this,ArCore_Img.class);
+            }
         }
 
         @Override
