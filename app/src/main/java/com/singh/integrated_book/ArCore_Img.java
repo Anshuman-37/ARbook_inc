@@ -46,7 +46,7 @@ public class ArCore_Img extends AppCompatActivity{
 
 
         CompletableFuture<ViewRenderable> renederable = ViewRenderable.builder()
-                .setView(arFragment.getContext(),R.layout.textviewtest)
+                .setView(arFragment.getContext(),R.layout.activity_main)
                 .build();
         CompletableFuture.allOf(
                 renederable
