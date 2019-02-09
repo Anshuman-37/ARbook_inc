@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Integrated_Book</string>
+    <string name="pick_from_activity">pick</string>
+    <string name="pick_from_fragment">fragment</string>
+</resources>
