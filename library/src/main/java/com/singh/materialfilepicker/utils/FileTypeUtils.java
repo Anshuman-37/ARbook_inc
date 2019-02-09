@@ -2,6 +2,8 @@ package com.singh.materialfilepicker.utils;
 
 import android.webkit.MimeTypeMap;
 
+import com.singh.library.R;
+
 import java.io.File;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
